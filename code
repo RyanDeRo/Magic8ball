@@ -1,0 +1,10 @@
+import random
+import time
+
+answers = ['Yes','No','Maybe','Ask later']
+play_again = "Yes"
+while play_again == "Yes" or "Y" or "Yes.":
+    input('Please ask me a Yes/No question. ')
+    time.sleep(3)
+    print(random.choice(answers)) 
+    play_again = input('Would you like to play again? ')
